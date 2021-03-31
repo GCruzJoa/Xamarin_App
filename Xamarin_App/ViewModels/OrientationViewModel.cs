@@ -12,7 +12,6 @@ namespace Xamarin_App.ViewModels
     public class OrientationViewModel : BaseViewModel
     {
         public override string Title { get; set; } = Config.Title;
-        public ICommand SpeakCommand { get; }
         public ICommand GetDeviceOrientation { get; }
         private IDeviceOrientationService _deviceOrientationService;
         public string Orientation { get; set; }
