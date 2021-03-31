@@ -11,6 +11,7 @@ namespace Xamarin_App.ViewModels
 {
     public class OrientationViewModel : BaseViewModel
     {
+        public override string Title { get; set; } = Config.Title;
         public ICommand SpeakCommand { get; }
         public ICommand GetDeviceOrientation { get; }
         private IDeviceOrientationService _deviceOrientationService;
@@ -22,13 +23,11 @@ namespace Xamarin_App.ViewModels
         {
             _deviceOrientationService = deviceOrientationService;
             GetDeviceOrientation = new DelegateCommand(GetOrientation);
-            //() => deviceOrientationService.GetOrientation());
         }
 
         public void GetOrientation()
         {
             var orientation = _deviceOrientationService.GetOrientation();
-            //            DeviceOrientation orientation = DependencyService.Get<IDeviceOrientationService>().GetOrientation();
             Orientation = orientation.ToString();
         }
     }

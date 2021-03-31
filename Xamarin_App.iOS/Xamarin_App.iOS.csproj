@@ -63,8 +63,10 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Effects\FocusEffect.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\MyEntryRenderer.cs" />
     <Compile Include="Services\DeviceOrientationService.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />

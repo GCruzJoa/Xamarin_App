@@ -9,7 +9,7 @@ namespace Xamarin_App.ViewModels
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {
-        //public abstract string Title { get; set; }
+        public abstract string Title { get; set; }
 
         protected INavigationService NavigationService { get; }
         protected IPageDialogService AlertService { get; }

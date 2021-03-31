@@ -15,12 +15,13 @@ namespace Xamarin_App
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            await NavigationService.NavigateAsync("/MainPage");
+            await NavigationService.NavigateAsync(Config.Home);
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<MainPage, OrientationViewModel>();
+            containerRegistry.RegisterForNavigation<NavigationPage>(Config.Navigate);
         }
     }
 }
