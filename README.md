@@ -1,9 +1,9 @@
 # Xamarin_App
 Xamarin App with:
-  <p>Dependency service to get the device orientation.</p>
-  <p>Custom renderer to change entry background color.</p>
-  <P>Focused effect.</p>
-  <p>Platform specifics.</p>
+  <p>1. Dependency service to get the device orientation.</p>
+  <p>2. Custom renderer to change entry background color.</p>
+  <P>3. Focused effect.</p>
+  <p>4. Platform specifics.</p>
 
 <p align="center">
  <img width="200" height:"200" src="App Screenshots/1.jpg" title="Captura 1"/>
