@@ -10,7 +10,7 @@
              Title="{Binding Title}">
     
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Padding="20">
+        <StackLayout Padding="20">
         <Label Text="Device Orientation"
                 FontAttributes="Bold"
                 HorizontalOptions="Center" />
@@ -22,7 +22,7 @@
                 HorizontalOptions="Center" />
         </StackLayout>
         
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout>
             <controls:MyEntry Placeholder="Entry using Renderers"/>
 
             <Entry Placeholder="Entry using Effects">
